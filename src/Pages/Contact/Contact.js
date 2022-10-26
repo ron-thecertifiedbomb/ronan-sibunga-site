@@ -4,56 +4,56 @@ import { useRef, useState } from "react";
 import "../Contact/Contact.css";
 
 const ContactPage = () => {
-  const [inputName, setInputName] = useState("");
-  const [inputEmail, setinputEmail] = useState("");
-  const [inputMessage, setinputMessage] = useState("");
+//   const [inputName, setInputName] = useState("");
+//   const [inputEmail, setinputEmail] = useState("");
+//   const [inputMessage, setinputMessage] = useState("");
 
-  const handleName = (event) => {
-    setInputName(event.target.value);
-  };
+//   const handleName = (event) => {
+//     setInputName(event.target.value);
+//   };
 
-  const handleEmail = (event) => {
-    setinputEmail(event.target.value);
-  };
-  const handleMessage= (event) => {
-    setinputMessage(event.target.value);
-  };
+//   const handleEmail = (event) => {
+//     setinputEmail(event.target.value);
+//   };
+//   const handleMessage= (event) => {
+//     setinputMessage(event.target.value);
+//   };
 
-  const handleClick = () => {
-    // 👇️ clear input value
-    setInputName("");
-    setinputEmail("");
-    setinputMessage("");
-  };
+//   const handleClick = () => {
+//     // 👇️ clear input value
+//     setInputName("");
+//     setinputEmail("");
+//     setinputMessage("");
+//   };
 
-  const form = useRef();
+//   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_k3j2gdc",
-        "template_qotkwgk",
-        form.current,
-        "rdTY6zpAKnKZlakhm"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message Sent");
-          handleClick();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+//     emailjs
+//       .sendForm(
+//         "service_k3j2gdc",
+//         "template_qotkwgk",
+//         form.current,
+//         "rdTY6zpAKnKZlakhm"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//           alert("Message Sent");
+//           handleClick();
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//   };
 
   return (
     <div className="contact-page-section" id="contactpage">
 
-      <div className="form-wrapper">
+      {/* <div className="form-wrapper">
         <h1>Contact Me</h1>
 
         <form ref={form} onSubmit={sendEmail}>
@@ -87,7 +87,7 @@ const ContactPage = () => {
           <input type="submit" value="Send" />
         </form>
       </div>
-      
+       */}
     </div>
   );
 };

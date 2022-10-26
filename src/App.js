@@ -4,7 +4,7 @@ import "./App.css";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
 import Project from "./Pages/Project/Project";
-// import ContactPage from "./Pages/Contact/Contact";
+ import ContactPage from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <AboutMe />
       <StackSection />
       <Project />
-      {/* <ContactPage /> */}
+       <ContactPage />
     </div>
   );
 }
