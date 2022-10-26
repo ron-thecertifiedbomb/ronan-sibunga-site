@@ -1,0 +1,80 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #272727;
+  padding: 1.2rem 1rem 1rem 1rem;
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+ul li {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 100;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.heading-card {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.logo-container {
+  height: 80px;
+  width: 83px;
+}
+.logo-container {
+  margin-bottom: 8px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(230px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-bottom: 0;
+  }
+}
