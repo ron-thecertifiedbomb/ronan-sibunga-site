@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:"Poppins", sans-serif;;
+  
+}
+
+
+:root {
+  --primary-color: white;
+  --primary-dark: black;
+  --secondary-color: grey;
+  --secondary-dark:#e3d002;
+  --overlay: rgba(0,0,0,.7);
+  --tertiary: #4BF707;
 }

@@ -1,0 +1,131 @@
+
+.content-main {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+max-width: 600px;
+max-height: 200px;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+} 
+
+.greeting-text {
+  line-height: clamp(10px, 2.5vw, 10px);
+  color: darkorange;
+  font-size: clamp(1.3rem, 2.5vw, 2rem); 
+}
+
+ .name-text {
+  font-size: clamp(1.3rem, 2.5vw, 5rem); 
+  color: rgb(126, 125, 125);
+  
+}
+
+.content-logo {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bracket-logo {
+ 
+  height: 22px;
+  width: 45px;
+}
+
+
+.changing-text::before {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  content: "";
+  
+  /* color: darkorange; */
+ 
+  color: var(--tertiary);
+  animation: text 8s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    content: "Front-end Developer.";
+    
+  }
+
+  30% {
+    content: "Graphic Artist.";
+    
+  }
+
+  60% {
+    content: "Video Editor.";
+    
+  }
+
+  100% {
+    content: "UX Designer.";
+    
+  }
+}
+
+
+.name-position {
+   font-size: clamp(1rem, 2.5vw, 1.7rem); 
+  color: darkorange;
+  margin-bottom: 1px;
+  line-height: 20px;
+  
+}
+
+ @media only screen and (max-width: 760px) {
+  .content-main {
+    margin-left: 0px;
+   } 
+   .bracket-logo {
+    height: 18px;
+    width: 30px;
+  }
+
+  
+  .name-position {
+   margin-bottom: 0;
+   line-height: 2px;
+ }
+}
+  
+  @media only screen and (max-width: 320px) {
+    .name-text {
+      color: rgb(126, 125, 125);
+      line-height: 15px;
+      margin-bottom: 2px;
+    }
+  .name-position {
+    font-size: clamp(0.9rem, 2.5vw, 2rem) !important;
+    line-height: 25px;
+    margin-bottom: 2px; 
+  }
+
+
+  .greeting-text {
+    line-height: 25px;
+    
+  }
+
+
+
+}
+   
+
+ 
+@media only screen and (max-width: 253px) {
+  .name-text {
+   font-size: 1rem;
+  }
+
+
+
+
+}
