@@ -1,0 +1,60 @@
+.social-icons-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .social-icons-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-icons-wrapper svg {
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: grey;
+    font-size: clamp(20px, 2.5vw, 30px);
+  }
+  
+  .social-icons-wrapper svg:hover {
+    transform: scale(1.2);
+    color: white;
+  }
+  
+  .follow-me-wrapper h1 {
+    letter-spacing: 2px;
+  }
+  
+  .nav-links a {
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+  }
+  .nav-links a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-links a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }

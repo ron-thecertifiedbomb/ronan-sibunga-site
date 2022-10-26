@@ -1,7 +1,7 @@
 import React from "react";
 import "../Home/Home.css";
 import MainContent from '../../Components/MainContent/MainContent';
-// import SocialIcons from "../../../Components/SocialIcons/SocialIcons";
+import SocialIcons from "../../Components/SocialIcons/SocialIcons";
 
 const Home = () => {
   return (
@@ -9,11 +9,10 @@ const Home = () => {
       <div className="content-wrapper">
       
         <MainContent /> 
-
-        {/* <div className="social-container">
+         <div className="social-container">
           <SocialIcons />       
           
-          </div>  */}
+          </div>  
            
        </div>
     </div>
