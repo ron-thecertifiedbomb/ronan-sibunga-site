@@ -1,5 +1,5 @@
-import Home from "./Pages/Home/Home";
 import NavBar from "../src/Components/NavBar/NavBar";
+import Home from "./Pages/Home/Home";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
 import Project from "./Pages/Project/Project";
