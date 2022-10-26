@@ -23,7 +23,7 @@ const AboutMe = ({modal, onClick}) => {
         My past time when I'm not doing digital technical stuff is playing the guitar, making music, and traveling.
         </p>
         <br></br>
-   <button className='resume-btn' onClick={onClick}>Download Now</button> 
+   <button className='resume-btn' onClick={onClick}>My Resume</button> 
       </div>
     </div>
 
