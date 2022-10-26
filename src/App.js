@@ -3,7 +3,7 @@ import NavBar from "../src/Components/NavBar/NavBar";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
 import Project from "./Pages/Project/Project";
-import Contact from "./Pages/Contact/Contact";
+// import Contact from "./Pages/Contact/Contact";
 import "./App.css";
 
 
@@ -15,7 +15,7 @@ function App() {
       <AboutMe />
       <StackSection />
       <Project />
-       <Contact />  
+       {/* <Contact />   */}
     </div>
   );
 }
