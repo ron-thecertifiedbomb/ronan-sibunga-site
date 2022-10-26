@@ -1,0 +1,67 @@
+
+.section-home{
+  height: 100vh;
+  background-color: var(--primary-dark);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.aboutme-container {
+  max-width: 800px;
+  padding: 10px;
+  
+}
+
+.about-heading {
+color: var(--primary-color);
+  font-size: clamp(2rem, 2.5vw, 5rem);
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  margin: clamp(1rem, 2.5vw, 1.2rem);
+}
+.about-para {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 300;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-heading {
+    margin-bottom: 20px;
+  }
+
+  .about-para {
+    font-size: 15px;
+    font-weight: 200;
+  }
+}
+
+.modal {
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.resume-btn {
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(74, 230, 22);
+  width: 120px;
+  color: grey;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.resume-btn:hover {
+  color: white;
+  background-color: var(--tertiary);
+  backdrop-filter: blur(30px);
+}
