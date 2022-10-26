@@ -3,6 +3,7 @@ import NavBar from "../src/Components/NavBar/NavBar";
 import "./App.css";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
+import Project from "./Pages/Project/Project";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <AboutMe />
       <StackSection />
+      <Project />
     </div>
   );
 }
