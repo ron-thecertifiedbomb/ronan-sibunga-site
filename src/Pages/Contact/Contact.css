@@ -1,77 +1,69 @@
-
-  .contact-page-section {
-    background-color: var(--primary-dark);
-    height:100vh;
-   display: grid;
-   place-items: center;
-  }
-
-
-
-.form-wrapper {
-    max-width: 420px;
-    width: 100%;
-    color: grey;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.contact-page-section {
+  background-color: var(--primary-dark);
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
+.form-wrapper {
+  max-width: 420px;
+  width: 100%;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .form-wrapper h1 {
   color: white;
-font-size: clamp(1.9rem, 2.5vw, 3rem);
+  font-size: clamp(1.9rem, 2.5vw, 3rem);
 }
-  
-  form {
-    padding-left:30px;
-    padding-right:30px;
-    padding-bottom: 2rem;
-    padding-top:60px;
-    margin: 12px auto;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    position:relative;
-    
-    width: 100%;
-    
-  }
-  
- */
-  
-  form > div > img{
-    filter:invert(1);
-    width:100px;
-  }
-  
-  form > input,
-  form > textarea {
-    padding: 12px;
-    margin: 12px auto;
-    border: 1px solid #ccc;
-    color: #ddd;
-    background-color: #222;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-  }
-  
-  form > textarea{
-    height:100px;
-    resize:none;
-  }
-  
-  form > input[type="submit"] {
-    max-width: 20vw;
-    padding-left: 1%;
-    padding-right: 1%;
-    cursor: pointer;
-    transition: 0.35s;
-  }
-  
-  form > input[type="submit"]:hover {
-    background-color: #555;
-  }
+
+form {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 2rem;
+  padding-top: 60px;
+  margin: 12px auto;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+}
+
+form > div > img {
+  filter: invert(1);
+  width: 100px;
+}
+
+form > input,
+form > textarea {
+  padding: 12px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  color: #ddd;
+  background-color: #222;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+form > textarea {
+  height: 100px;
+  resize: none;
+}
+
+form > input[type="submit"] {
+  max-width: 20vw;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #555;
+}
