@@ -3,8 +3,8 @@ import NavBar from "../src/Components/NavBar/NavBar";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
 import Project from "./Pages/Project/Project";
+import Contact from "./Pages/Contact/Contact";
 import "./App.css";
-// import ContactPage from "./Pages/Contact/Contact";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <AboutMe />
       <StackSection />
       <Project />
-       {/* <ContactPage />  */}
+       <Contact />  
     </div>
   );
 }
