@@ -4,7 +4,7 @@ import AboutMe from "./Pages/AboutMe/AboutMe";
 import StackSection from "./Pages/StackSection/StackSection";
 import Project from "./Pages/Project/Project";
 import "./App.css";
-import ContactPage from "./Pages/Contact/Contact";
+import ContactPage from "./Pages/Contact";
 
 
 function App() {
