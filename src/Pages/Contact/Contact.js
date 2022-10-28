@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import "../Contact/Contact.css";
 
 const Contact = () => {
+
+  
   const [inputName, setInputName] = useState("");
   const [inputEmail, setinputEmail] = useState("");
   const [inputMessage, setinputMessage] = useState("");
@@ -52,10 +54,12 @@ const Contact = () => {
 
   return (
     <div className="contact-page-section" id="contactpage">
+
       <div className="form-wrapper">
         <h1>Contact Me</h1>
 
         <form ref={form} onSubmit={sendEmail}>
+          
           <label>Name</label>
           <input
             type="text"
