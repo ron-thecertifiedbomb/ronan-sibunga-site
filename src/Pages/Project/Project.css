@@ -61,7 +61,7 @@ img {
   /* margin: clamp(6rem, 2.5vw, 5rem) */
   margin-top: 6rem;
   margin-bottom: 1rem;
-  
+  text-align: center;
 }
 
 .project-heading h1 {
@@ -77,25 +77,43 @@ img {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10rem;
   margin-bottom: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+
+}
+
+.column-box {
+  flex-basis: 100%;
+
+
+}
+.column-box-middle {
+  flex-basis: 100%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: thin;
+ 
 }
 
 .project-filter-buttons{
- border: none;
- background: none;
  color: var(--primary-color);
  font-size: clamp(0.8rem, 2vw, 1rem);
  letter-spacing: 1px;
  cursor: pointer;
+ margin-bottom: 3rem;
 }
 
-
+.filter-buttons {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  }
 
 .filter-buttons-active {
 text-decoration: underline;
 text-underline-offset: 5px;
 color: var(--tertiary);
+font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .toggle-on {
@@ -133,9 +151,7 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width: 574px) {
-  .project-filter-buttons{
-    gap: 3rem;
-  }
+ 
 
   .project-heading {
     margin-bottom: 1.5rem;
@@ -144,10 +160,5 @@ text-decoration: underline;
   
 
 
-@media only screen and (max-width: 390px) {
-  .project-filter-buttons{
-    gap: 4rem;
-  }
-  
-}
+
 

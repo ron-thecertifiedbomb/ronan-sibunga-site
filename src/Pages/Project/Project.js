@@ -37,15 +37,17 @@ const Project = () => {
       <div className="project-heading">
         <h1> My Projects</h1>
       </div>
+
       <div className="project-filter-buttons">
+        <div className="column-box">  
         <h1
-          className={project === ProjectList ? "filter-buttons-active" : ""}
-          onClick={toggleAll}
-        >
-          All
-        </h1>
+          className={project === ProjectList ? "filter-buttons-active" : "filter-buttons"}
+          onClick={toggleAll}>All </h1>
+          </div>
+
+          <div className="column-box-middle">  
         <h1
-          className={completed ? "filter-buttons-active" : ""}
+          className={completed ? "filter-buttons-active" : "filter-buttons"}
           onClick={() => {
             filterType("completed");
             toggleCompleted();
@@ -53,8 +55,11 @@ const Project = () => {
         >
           Completed
         </h1>
+        </div>
+
+        <div className="column-box">  
         <h1
-          className={ongoing ? "filter-buttons-active" : ""}
+          className={ongoing ? "filter-buttons-active" : "filter-buttons"}
           onClick={() => {
             filterType("on-going");
             toggleOnGoing();
@@ -62,6 +67,8 @@ const Project = () => {
         >
           On-going
         </h1>
+        </div>
+
       </div>
 
       <div className="projectList">
