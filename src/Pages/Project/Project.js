@@ -39,13 +39,13 @@ const Project = () => {
       </div>
       <div className="project-filter-buttons">
         <h1
-          className={project === ProjectList ? "filter-buttons-active" : ""}
+          className={project === ProjectList ? "filter-buttons-active" : "filter-buttons"}
           onClick={toggleAll}
         >
           All
         </h1>
         <h1
-          className={completed ? "filter-buttons-active" : ""}
+          className={completed ? "filter-buttons-active" : "filter-buttons"}
           onClick={() => {
             filterType("completed");
             toggleCompleted();
@@ -54,7 +54,7 @@ const Project = () => {
           Completed
         </h1>
         <h1
-          className={ongoing ? "filter-buttons-active" : ""}
+          className={ongoing ? "filter-buttons-active" : "filter-buttons"}
           onClick={() => {
             filterType("on-going");
             toggleOnGoing();
