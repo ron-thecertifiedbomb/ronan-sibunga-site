@@ -10,7 +10,7 @@ const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("#home");
 
   const getClicked = (event) => {
-    // console.log(event.currentTarget.id);
+    console.log(event.currentTarget.id);
     setClick(false);
     setActiveMenu(event.currentTarget.id);
   };

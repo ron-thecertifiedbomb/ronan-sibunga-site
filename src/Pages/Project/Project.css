@@ -61,6 +61,7 @@ img {
   /* margin: clamp(6rem, 2.5vw, 5rem) */
   margin-top: 6rem;
   margin-bottom: 1rem;
+  
 }
 
 .project-heading h1 {
@@ -74,15 +75,18 @@ img {
 .project-filter-buttons{
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   gap: 10rem;
   margin-bottom: 2rem;
 }
 
-.project-filter-buttons button{
+.project-filter-buttons{
  border: none;
  background: none;
  color: var(--primary-color);
  font-size: clamp(0.8rem, 2vw, 1rem);
+ letter-spacing: 1px;
  cursor: pointer;
 }
 
@@ -90,6 +94,8 @@ img {
 
 .filter-buttons-active {
 text-decoration: underline;
+text-underline-offset: 5px;
+color: var(--tertiary);
 }
 
 .toggle-on {
