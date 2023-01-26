@@ -3,8 +3,7 @@ import Proj1 from  "../ProjectList/assets/Portfolio.jpg";
 import Proj3 from "../ProjectList/assets/WorkHero.jpg";
 import Proj4 from "../ProjectList/assets/Travel.jpg";
 import Proj5 from "../ProjectList/assets/LizardInteractivePlayer.jpg";
-
-
+import Proj6 from "../ProjectList/assets/Ecommerce.jpg"
 
 export const ProjectList = [
 
@@ -39,6 +38,12 @@ export const ProjectList = [
     image: Proj5,
     skills: "React,Node.js,MySQL,GraphQL",
     status: "on-going"
+  },
+  {
+    name: "Lizard Interactive E-Commmerce Store",
+    image: Proj6,
+    skills: "HTML5,CSS3 JS, ES6, Bootsrap 5",
+    status: "completed"
   },
 
 ];
